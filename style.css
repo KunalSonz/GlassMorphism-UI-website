@@ -1,0 +1,380 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-y: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+#fold1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* background-image: url(second.jpg);
+  background-size: cover; */
+  /* background: rgb(238, 57, 247);
+  background: linear-gradient(15deg, #ee39f7 28%, #573bf5 75%); */
+  background: rgb(235, 34, 117);
+  background: linear-gradient(
+    16deg,
+    rgba(235, 34, 117, 1) 30%,
+    rgba(238, 57, 247, 1) 40%,
+    rgba(87, 59, 245, 1) 70%
+  );
+  background-size: 400% 400%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: change 3s ease-in-out infinite;
+}
+
+.glass {
+  background-color: white;
+  height: 90vh;
+  width: 80%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.29) 28%,
+    rgba(255, 255, 255, 0.7) 75%
+  );
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.15479695296087181) 28%,
+    rgba(255, 255, 255, 0.3676821070224965) 75%
+  ); */
+  border-radius: 25px;
+
+  /* border: 2px solid rgba(255, 255, 255, 0.1); */
+  backdrop-filter: blur(1rem);
+  z-index: 2;
+}
+
+.circle1 {
+  width: 26%;
+  height: 50%;
+  border-radius: 50%;
+  /* background-color: #eb2275; */
+  position: absolute;
+  left: 2%;
+  top: 70%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.29) 28%,
+    rgba(255, 255, 255, 0.7) 75%
+  );
+  backdrop-filter: blur(1rem);
+}
+
+.circle2 {
+  width: 16%;
+  height: 30%;
+  border-radius: 50%;
+  /* background-color: #eb2275; */
+  position: absolute;
+  left: 20%;
+  top: 2%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.29) 28%,
+    rgba(255, 255, 255, 0.7) 75%
+  );
+  backdrop-filter: blur(1rem);
+}
+
+.circle3 {
+  width: 30%;
+  height: 60%;
+  border-radius: 50%;
+  /* background-color: #eb2275; */
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.29) 28%,
+    rgba(255, 255, 255, 0.7) 75%
+  );
+  backdrop-filter: blur(1rem);
+}
+
+.nav {
+  /* background-color: white; */
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.nav img {
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.navigation {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.navigation a {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+.midFold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+}
+
+.ctafold {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* background-color: antiquewhite; */
+}
+
+.cta {
+  /* border: 2px solid black; */
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+
+.cta h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.cta p {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+.submitFold {
+  height: 500px;
+  /* background-color: chocolate; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitForm {
+  width: 80%;
+  height: 100%;
+  border-radius: 25px;
+  backdrop-filter: blur(1rem);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    330deg,
+    rgba(255, 255, 255, 0.1) 28%,
+    rgba(255, 255, 255, 0.5) 75%
+  );
+  /* display: flex;
+  justify-content: center;
+  align-items: center;*/
+  text-align: center;
+}
+
+.submitForm h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.formClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.formClass form {
+  height: 350px;
+  /* border: 2px solid black; */
+  margin: 20px;
+}
+
+.formClass input,
+button,
+textarea,
+label {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.formClass input {
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.formClass textarea {
+  height: 80px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.formClass button {
+  height: 50px;
+  margin-top: 20px;
+  background: rgb(235, 34, 117);
+  background: linear-gradient(
+    53deg,
+    rgba(235, 34, 117, 1) 15%,
+    rgba(238, 57, 247, 1) 50%,
+    rgba(87, 59, 245, 1) 85%
+  );
+  cursor: pointer;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .circle1 {
+    height: 20%;
+  }
+  .circle2 {
+    height: 15%;
+  }
+  .circle3 {
+    height: 30%;
+  }
+  .midFold {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    padding: 50px;
+  }
+
+  .formClass input,
+  button,
+  textarea,
+  label {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ctafold {
+    height: 300px;
+  }
+  .cta {
+    margin-bottom: 0px;
+  }
+  .submitForm {
+    height: auto;
+  }
+  .navigation {
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .circle2 {
+    width: 25%;
+  }
+  .circle3 {
+    width: 50%;
+  }
+  .circle1 {
+    width: 40%;
+  }
+
+  .nav img {
+    margin-left: 3px;
+    margin-top: 7px;
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .navigation {
+    padding-left: 0px;
+  }
+
+  .navigation a {
+    padding-left: 16px;
+    font-size: 15px;
+  }
+
+  .ctafold {
+    height: 200px;
+  }
+
+  .cta {
+    padding: 0px;
+  }
+
+  .cta h1 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 13px;
+  }
+
+  .submitFold {
+    height: auto;
+  }
+
+  .submitForm h2 {
+    font-size: 14px;
+  }
+
+  .formClass input {
+    height: 20px;
+  }
+
+  .formClass textarea {
+    height: 40px;
+  }
+
+  .formClass button {
+    height: 30px;
+  }
+
+  .formClass label {
+    font-size: 12px;
+  }
+
+  .formClass form {
+    height: 255px;
+  }
+}
